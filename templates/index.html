@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="https://chat.openai.com/favicon.ico" type="image/x-icon">
+    
+    <style>
+        .right2{
+            display: none;
+        }
+    </style>
+    <title>ChatGpt Clone</title>
+</head>
+<body class="bg-backgroundColr ">
+    <div class="flex h-[100vh] text-white">
+        <div class="left bg-[#202123] w-2/12 flex flex-col justify-between">
+            <div class="TopchatItems">
+                <div class="flex justify-center items-center">
+                    <button class="border-white border rounded-md flex justify-start items-center py-2 px-4 w-[90%] space-x-1 m-2 hover:opacity-60">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
+                        <span>New Chat</span>
+                    </button>
+                </div>
+                <div class="m-2 ml-3 opacity-70">Today</div>
+                <div class="chats flex flex-col justify-center items-center space-y-1">
+                    
+                    
+                    <div class="chat  flex justify-start items-center space-x-4 my-1 opacity-80 py-2 px-4 w-[90%] bg-gray-600 rounded-md hover:cursor-pointer ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16"> <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/> </svg>
+                        <span>this is AI baby</span>
+                    </div>
+                </div>
+                <div class="chats flex flex-col justify-center items-center">
+                    <div class="chat  flex justify-start items-center space-x-4 opacity-80 py-2 px-4 w-[90%] rounded-md hover:bg-gray-600 cursor-pointer ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16"> <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/> </svg>
+                        <span class="">Ai Assistant classs2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <hr class="opacity-20 w-[95%] mx-1 text-center">
+                <div class="items2 flex justify-between items-center w-[90%]">
+                    <button class="flex justify-start items-center mt-2 space-x-4 px-4 py-3 w-[90%] rounded-md hover:bg-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16"> <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/> </svg>
+                        <span class="text-xs">Upgrade to Plus</span>
+                    </button>
+                    <span class="rounded-md bg-yellow-200 px-1.5 py-0.5 text-xs font-medium uppercase text-gray-800 hover:cursor-pointer">NEW</span>
+                </div>
+                <button class="flex justify-start items-center m-1 space-x-4 px-4 py-3 w-[90%] rounded-md hover:bg-gray-600">
+                    <img class="w-8" src="https://chat.openai.com/_next/image?url=https%3A%2F%2Fs.gravatar.com%2Favatar%2F97de5cd99e4f03a53d8de411e3409ba4%3Fs%3D480%26r%3Dpg%26d%3Dhttps%253A%252F%252Fcdn.auth0.com%252Favatars%252Faw.png&w=48&q=75" alt="">
+                    <span class="text-sm">ahmedgpt@gmail.com</span>
+                </button>
+            </div>
+        </div>
+        <div class="right1 w-10/12 flex justify-center items-center flex-col">
+            <div class="text-center w-full text-4xl font-bold mt-20">
+                AhmedGPT
+            </div>
+            <div class="items flex py-4 w-[52vw] justify-around m-7">
+                <div class="examples flex flex-col justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16"> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/> </svg>
+                    <div>Examples</div>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain Quantum computer in simple terms</button>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain Math Physics in simple terms</button>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain differnet version of web in simple terms</button>
+                </div>
+                <div class="cap flex flex-col justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="currentColor" class="bi bi-lightning" viewBox="0 0 16 16"> <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/> </svg>
+                    <div>Capability</div>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain Quantum computer in simple terms</button>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain Quantum computer in simple terms</button>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain Quantum computer in simple terms</button>
+                </div>
+                <div class="lim flex flex-col justify-center items-center">
+                    <svg width="25" height="30" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M20.0429 21H3.95705C2.41902 21 1.45658 19.3364 2.22324 18.0031L10.2662 4.01533C11.0352 2.67792 12.9648 2.67791 13.7338 4.01532L21.7768 18.0031C22.5434 19.3364 21.581 21 20.0429 21Z" stroke="currentColor" stroke-linecap="round"/> <path d="M12 9V13" stroke="currentColor" stroke-linecap="round"/> <path d="M12 17.01L12.01 16.9989" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                    <div>Limitation</div>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain Quantum computer in simple terms</button>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain Quantum computer in simple terms</button>
+                    <button class="bg-gray-500 hover:bg-gray-700 mx-4 my-2 py-3 px-4 w-[18vw] rounded-md ">Explain Quantum computer in simple terms</button>
+                </div>
+            </div>
+
+
+            <div class="input w-full flex items-center justify-center flex-col text-center my-20">
+                <div class="svgbtn w-[60vw] flex">
+                    <input class="w-full bg-gray-600 p-3 rounded-md outline-none" placeholder="Type to Search" type="text" name="text" id="questioninput">
+                    
+                    <button id="sendbtn" class=" relative -left-10 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16"> <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/> </svg>
+                    </button>
+                </div>
+                <div class="text-xs m-3 opacity-70">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. <a class="underline" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes"> ChatGPT August 3 Version</a></div>
+            </div>
+        </div>
+
+        
+        <div class="right2 flex flex-col w-10/12 items-center h-fit ">
+            <div class="box1 m-auto flex justify-start w-[40vw] items-center py-6 space-x-3">
+                <img class="w-8 h-8" src="https://chat.openai.com/_next/image?url=https%3A%2F%2Fs.gravatar.com%2Favatar%2F97de5cd99e4f03a53d8de411e3409ba4%3Fs%3D480%26r%3Dpg%26d%3Dhttps%253A%252F%252Fcdn.auth0.com%252Favatars%252Faw.png&w=48&q=75" alt="">
+                <div id="question2">what is the name of my son in 2024 what is the goood is the name of the islam and today is my birthday</div>
+
+            </div>
+            <div class="box2 bg-gray-600 flex justify-center w-full items-center py-6 ">
+                <div class=" box w-[40vw] space-x-3 flex justify-start">
+                    <img class="w-8 h-8" src="https://chat.openai.com/favicon.ico" alt="">
+                    <div class="flex flex-col space-y-1">
+                        <div id="question1">what is the name of my son in 2024 what is the goood is the name of the islam and today is my birthday</div>
+                        <div id="solution">what is the name of my son in 2024 what is the goood is </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input pt-60 w-full flex items-center justify-center flex-col text-center mt-24">
+                <div class="svgbtn w-[60vw] flex">
+                    <input class=" w-full bg-gray-600 p-3 rounded-md outline-none" placeholder="Type to Search" type="text" name="text" id="">
+                    
+                    <button  class="relative -left-10 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16"> <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/> </svg>
+                    </button>
+                </div>
+                <div class="text-xs m-3 opacity-70">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. <a class="underline" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes"> ChatGPT August 3 Version</a></div>
+            </div>
+        </div>
+          
+    
+    
+    
+    </div>
+
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>
+
